@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenard Mathew D. Dionglay — Student Profile</title>
+  <!-- Load Google Fonts: Inter & JetBrains Mono for subtle UI labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Consolas', 'monospace'],
+          },
+          colors: {
+            vs: {
+              bg: '#1e1e1e',
+              surface: '#252526',
+              header: '#2d2d30',
+              item: '#2d2d30',
+              hover: '#323236',
+              border: '#3e3e42',
+              blue: '#007acc',
+              text: '#d4d4d4',
+              muted: '#9d9d9d',
+              teal: '#4ec9b0',
+              sky: '#9cdcfe',
+              peach: '#ce9178',
+              purple: '#c586c0',
+            }
+          }
+        },
+      },
+    };
+  </script>
+</head>
+<body class="min-h-screen bg-vs-bg text-vs-text font-sans antialiased flex items-center justify-center p-4 sm:p-6 md:p-10 selection:bg-vs-blue selection:text-white">
+
+  <!-- Visual Studio Dark+ Styled Profile Window -->
+  <main class="w-full max-w-2xl bg-vs-surface border border-vs-border rounded-xl shadow-2xl shadow-black/60 overflow-hidden">
+
+    <!-- Subtle Visual Studio Top Title Bar -->
+    <div class="h-10 bg-vs-header border-b border-vs-border px-4 flex items-center justify-between select-none">
+      <div class="flex items-center gap-2" aria-hidden="true">
+        <span class="w-3 h-3 rounded-full bg-[#ff5f56]/90"></span>
+        <span class="w-3 h-3 rounded-full bg-[#ffbd2e]/90"></span>
+        <span class="w-3 h-3 rounded-full bg-[#27c93f]/90"></span>
+      </div>
+      <span class="font-mono text-xs text-vs-muted tracking-wide">Student Profile — Visual Studio Theme</span>
+      <span class="w-2.5 h-2.5 rounded-full bg-vs-blue" title="Active"></span>
+    </div>
+
+    <!-- Top Blue Accent Line -->
+    <div class="h-0.5 w-full bg-vs-blue"></div>
+
+    <!-- Main Profile Content -->
+    <div class="p-6 sm:p-8 md:p-10 space-y-8">
+
+      <!-- 1. Header / Profile Identity -->
+      <header class="flex flex-col sm:flex-row sm:items-center gap-5 pb-7 border-b border-vs-border">
+        <!-- Monogram Avatar -->
+        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-vs-header border border-vs-border flex items-center justify-center shrink-0 shadow-inner">
+          <span class="text-2xl sm:text-3xl font-bold tracking-tight text-vs-sky">LD</span>
+        </div>
+
+        <!-- Name, University & Section Badge -->
+        <div class="space-y-2">
+          <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-snug">
+            Lenard Mathew D. Dionglay
+          </h1>
+          <p class="text-sm sm:text-base text-vs-muted font-normal">
+            student of Laguna State Polytechnic University
+          </p>
+          <div class="pt-1 flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-vs-blue/15 border border-vs-blue/40 text-vs-sky font-mono text-xs font-medium">
+              <span class="w-1.5 h-1.5 rounded-full bg-vs-blue"></span>
+              1st Year BSINFO 1B student
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2. Hobbies & Interests Section -->
+      <section aria-labelledby="hobbies-heading" class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 id="hobbies-heading" class="text-xs font-mono uppercase tracking-widest text-vs-muted">
+            Hobbies &amp; Interests
+          </h2>
+          <span class="text-xs font-mono text-vs-muted/70">04 items</span>
+        </div>
+
+        <!-- Responsive 2-Column Hobby Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+
+          <!-- Hobby 1: Guitar and singing -->
+          <div class="group flex items-start gap-3.5 p-4 rounded-lg bg-vs-item border border-vs-border hover:border-vs-blue/70 hover:bg-vs-hover transition-all duration-200">
+            <div class="w-9 h-9 rounded-lg bg-vs-bg border border-vs-border flex items-center justify-center text-vs-peach shrink-0 group-hover:border-vs-peach/50 transition-colors">
+              <!-- Music Note Icon -->
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+              </svg>
+            </div>
+            <div class="pt-1">
+              <h3 class="text-sm font-medium text-white group-hover:text-vs-sky transition-colors">
+                Guitar and singing
+              </h3>
+            </div>
+          </div>
+
+          <!-- Hobby 2: Spending time with friends -->
+          <div class="group flex items-start gap-3.5 p-4 rounded-lg bg-vs-item border border-vs-border hover:border-vs-blue/70 hover:bg-vs-hover transition-all duration-200">
+            <div class="w-9 h-9 rounded-lg bg-vs-bg border border-vs-border flex items-center justify-center text-vs-teal shrink-0 group-hover:border-vs-teal/50 transition-colors">
+              <!-- Users / Friends Icon -->
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div class="pt-1">
+              <h3 class="text-sm font-medium text-white group-hover:text-vs-sky transition-colors">
+                Spending time with friends
+              </h3>
+            </div>
+          </div>
+
+          <!-- Hobby 3: Diving into deep conversations (social/educational) -->
+          <div class="group flex items-start gap-3.5 p-4 rounded-lg bg-vs-item border border-vs-border hover:border-vs-blue/70 hover:bg-vs-hover transition-all duration-200">
+            <div class="w-9 h-9 rounded-lg bg-vs-bg border border-vs-border flex items-center justify-center text-vs-purple shrink-0 group-hover:border-vs-purple/50 transition-colors">
+              <!-- Chat / Conversation Icon -->
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+              </svg>
+            </div>
+            <div class="pt-0.5">
+              <h3 class="text-sm font-medium text-white group-hover:text-vs-sky transition-colors leading-snug">
+                Diving into deep conversations (social/educational)
+              </h3>
+            </div>
+          </div>
+
+          <!-- Hobby 4: Basketball -->
+          <div class="group flex items-start gap-3.5 p-4 rounded-lg bg-vs-item border border-vs-border hover:border-vs-blue/70 hover:bg-vs-hover transition-all duration-200">
+            <div class="w-9 h-9 rounded-lg bg-vs-bg border border-vs-border flex items-center justify-center text-vs-sky shrink-0 group-hover:border-vs-sky/50 transition-colors">
+              <!-- Basketball Icon -->
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18" />
+              </svg>
+            </div>
+            <div class="pt-1">
+              <h3 class="text-sm font-medium text-white group-hover:text-vs-sky transition-colors">
+                Basketball
+              </h3>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Subtle Visual Studio Blue Status Bar Footer -->
+    <footer class="h-7 bg-vs-blue px-4 flex items-center justify-between text-[11px] font-mono text-white/95 select-none">
+      <span>LSPU — BSINFO 1B</span>
+      <span>UTF-8</span>
+    </footer>
+
+  </main>
+
+</body>
+</html>
